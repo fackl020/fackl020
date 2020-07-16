@@ -153,11 +153,18 @@ section {
 	min-width: 200px;
 	padding: 50px;
 }
-iframe {
-
+.content img {
+  border-radius: 0;
+	border: 1px solid black;
+	width: 80%;
+}
+.content img:hover {
+	width: 100%;
 }
 h2 {
 	width: 100%;
+	margin: 0 auto;
+	text-align: center;
 }
 .toolbar {
 	display: none; /*this literally does nothing, I'm still learning how to style the iframe? What am I doing wrong lol, anyway if on the absolute offchance someone reads this just dm me on twitter what the fuck is going wrong @wannaberiotgirl*/
