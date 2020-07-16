@@ -53,12 +53,16 @@ table {
   height: 100%;
 	font-family: 'Quicksand', sans-serif;
 }
-
+body {
+	display: flex;
+}
 
 nav{
+	display: inline-block;
+	position: aboslute;
 	margin: 0px;
 	padding: 0px;
-	min-width: 200px;
+	min-width: 300px;
 	max-width: 400px;
   height: 100%;
 	overflow: scroll;
@@ -71,8 +75,8 @@ nav{
 img {
 	display: block;
   border-radius: 50%;
-  max-width: 275px;
-	min-width: 200px;
+  min-width: 200px;
+	max-width: 220px;
   margin: 20px auto;
 }
 #name {
@@ -85,34 +89,76 @@ img {
 
 .card {
 	padding: 20px;
-	min-width: 200px;
-	max-width: 300px;
+	min-width: 250px;
+	max-width: 270px;
 	margin: 20px auto;
 	background-color: ghostwhite;
 	border-radius: 15px;
 }
 #intro p {
 	font-size: 12px;
-	min-width: 200px;
-	max-width: 300px;
+	min-width: 180px;
+	max-width: 200px;
 	margin: 20px auto;
-	text-align: center;
-	
+	letter-spacing: .5px;
+	/*text-align: 
+	text-justify: inter-word;*/
 }
 
-
+#links a {
+	color: black;
+	text-decoration: none;
+}
 
 #links li {
 	padding: 5px;
 	font-size: 14px;
 	border: 1px solid mediumaquamarine;
-	width: 200px;
+	min-width: 180px;
+	max-width: 200px;
 	text-align: center;
 	margin: 10px auto;
 	border-radius: 15px;
 }
 
 #links li:hover {
-	color: ghostwhite;
 	background-color: mediumaquamarine;
+	color: ghostwhite;
+}
+
+#links a:hover {
+		color: ghostwhite;
+}
+
+nav span {
+	display: block;
+	width: 200px;
+	text-align: center;
+	font-size: 10px;
+	color: ghostwhite;
+	opacity: 60%;
+	margin: 0 auto;
+}
+
+section {
+	overflow: scroll;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+	min-width: 200px;
+	padding: 50px;
+}
+iframe {
+
+}
+h2 {
+	width: 100%;
+}
+.toolbar {
+	display: none; /*this literally does nothing, I'm still learning how to style the iframe? What am I doing wrong lol, anyway if on the absolute offchance someone reads this just dm me on twitter what the fuck is going wrong @wannaberiotgirl*/
 }
